@@ -1,0 +1,45 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // .welcome {
+  //   margin-top: 100px;
+  //   margin-bottom: 100px;
+  //   position: relative;
+  // }
+  .box {
+    padding-right: 40px;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  img {
+    width: 400px;
+  }
+
+  .socialMedia {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      transform: translate(-65px);
+
+      li {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      li a {
+        @extend %hover-effect;
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
