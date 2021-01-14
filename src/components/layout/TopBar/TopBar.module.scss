@@ -15,13 +15,24 @@
       a {
         @extend %hover-effect;
         color: $topBar-color-a;
-        font-size: 13px;
+        font-size: 16px;
 
         &:hover {
           color: $topBar-color;
           text-decoration: none;
         }
       }
+    }
+  }
+
+  a {
+    @extend %hover-effect;
+    color: $topBar-color-a;
+    font-size: 16px;
+
+    &:hover {
+      color: $topBar-color;
+      text-decoration: none;
     }
   }
 
@@ -33,8 +44,17 @@
     }
   }
 
-  .topMenu ul li {
+  .name {
+    color: $topBar-color;
+
+    &:hover {
+      color: $topBar-color-a;
+    }
+  }
+
+  .topMenu {
     margin-left: 1.5rem;
+    margin-top: 15px;
 
     .icon {
       margin-right: 5px;
@@ -43,13 +63,13 @@
 }
 
 @media (max-width: 767px) {
-  .topMenu ul li a {
+  .topMenu a {
     visibility: hidden;
     font-size: 0px;
 
     .icon {
       visibility: visible;
-      font-size: 13px;
+      font-size: 16px;
     }
   }
 }

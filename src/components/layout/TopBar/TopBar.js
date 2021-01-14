@@ -1,9 +1,4 @@
-import {
-  faCaretDown,
-  faBars,
-  faEnvelope,
-  faPhone,
-} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
@@ -15,39 +10,25 @@ const TopBar = () => (
   <div className={styles.root}>
     <div className='container'>
       <div className='row'>
-        <div className={`col text-left ${styles.topOptions}`}>
+        <div className={`col-sm-8 col-md-6 text-left ${styles.topOptions}`}>
           <ul>
             <li>
-              <a href='/#'>ANNA KIJANIA</a>
+              <a className={styles.name} href='/#'>
+                ANNA KIJANIA
+              </a>
             </li>
             <li>
               <a href='/about'>about me</a>
             </li>
             <li>
-              <a href='/projects'>
-                projects <FontAwesomeIcon className={styles.icon} icon={faCaretDown} />
-              </a>
+              <a href='/projects'>projects</a>
             </li>
           </ul>
         </div>
         <div className={`col text-right ${styles.topMenu}`}>
-          <ul>
-            <li>
-              <a href='mailto:kijania.anna@gmail.com'>
-                <FontAwesomeIcon className={styles.icon} icon={faEnvelope} /> contact
-              </a>
-            </li>
-            <li>
-              <a href='/#'>
-                <FontAwesomeIcon className={styles.icon} icon={faPhone} /> +48 509095907
-              </a>
-            </li>
-            <li>
-              <a href='/#'>
-                <FontAwesomeIcon className={styles.icon} icon={faBars} />
-              </a>
-            </li>
-          </ul>
+          <a href='mailto:kijania.anna@gmail.com'>
+            <FontAwesomeIcon className={styles.icon} icon={faEnvelope} /> contact me
+          </a>
         </div>
       </div>
     </div>

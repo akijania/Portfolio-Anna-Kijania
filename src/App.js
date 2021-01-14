@@ -9,6 +9,7 @@ import About from './components/views/About/About';
 import Homepage from './components/views/Homepage/Homepage';
 import NotFound from './components/views/PageNotFound/PageNotFound';
 import ProjectPage from './components/views/ProjectPage/ProjectPageContainer';
+import Projects from './components/views/Projects/ProjectsContainer';
 import store from './redux/store';
 
 const App = () => (
@@ -18,7 +19,7 @@ const App = () => (
         <Switch>
           <Route exact path={'/'} component={Homepage} />
           <Route exact path={'/about'} component={About} />
-          <Route exact path={'/projects'} component={About} />
+          <Route exact path={'/projects'} component={Projects} />
           <Route exact path={'/projects/:project'} component={ProjectPage} />
           <Route path='*' component={NotFound} />
         </Switch>

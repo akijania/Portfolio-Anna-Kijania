@@ -6,10 +6,53 @@
 
 .topControlbar {
   width: 100%;
-  margin: 10px 10px 30px 10px;
+  margin: 50px 10px 30px 10px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px black solid;
+}
+
+.skills {
+  margin: 50px 0;
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.icon {
+  color: $orange;
+}
+
+.box {
+  padding: 50px;
+  position: relative;
+
+  .boxContent {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+  }
+
+  h4 {
+    padding-bottom: 10px;
+  }
+}
+
+.box::before {
+  width: 300px;
+  background: $orange;
+  height: 300px;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(20deg);
 }

@@ -58,6 +58,7 @@
   &:not(.noHover):hover {
     background-color: $button-outline-border;
     color: $button-outline-not-color;
+    text-decoration: none;
   }
 }
 

@@ -14,18 +14,16 @@ const LastPost = ({ id, title, description, image }) => (
       <h4>
         <a href='/#'>{title}</a>
       </h4>
+      <div className={styles.button}>
+        <Button href={`/projects/${id}`} variant='outline'>
+          See project
+        </Button>
+      </div>
       <p className={styles.description}>{description}</p>
-      <div className={'row ' + styles.button}>
-        <div className='col-sm-6 col-lg-12'>
-          <Button href={`/projects/${id}`} variant='medium'>
-            Read more
-          </Button>
-        </div>
-        <div className='col-sm-6 col-lg-12'>
-          <Button href={`/projects/${id}`} variant='medium'>
-            See project
-          </Button>
-        </div>
+      <div className={styles.button}>
+        <Button href={`/projects/${id}`} variant='outline'>
+          Read more
+        </Button>
       </div>
     </div>
   </div>
