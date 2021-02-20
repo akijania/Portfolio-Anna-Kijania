@@ -45,14 +45,3 @@ ul {
     padding-bottom: 10px;
   }
 }
-
-.box::before {
-  width: 300px;
-  background: $orange;
-  height: 300px;
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  transform: rotate(20deg);
-}
