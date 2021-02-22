@@ -5,8 +5,6 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
-const creds = require('./config');
-
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -21,8 +19,8 @@ app.get('*', (req, res) => {
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: creds.USER,
-    pass: creds.PASS,
+    user: process.env.USER,
+    pass: process.env.PASS,
   },
 });
 
@@ -40,7 +38,7 @@ router.post('/contact', (req, res) => {
   const message = req.body.message;
   const mail = {
     from: name,
-    to: creds.USER,
+    to: process.env.USER,
     subject: 'Contact Form Submission',
     html: `<p>Name: ${name}</p>
              <p>Email: ${email}</p>
