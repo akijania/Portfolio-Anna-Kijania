@@ -13,19 +13,19 @@ const ProjectPage = ({ error, project }) => {
       <div className={styles.root}>
         <div className='container'>
           <div className='row'>
-            <div className={`col-6 ${styles.image}`}>
+            <div className={`col-xs-12 col-md-6 ${styles.image}`}>
               {project.images &&
                 project.images.map(image => (
                   <img key={image} src={image} alt={project.title} />
                 ))}
             </div>
-            <div className={`col-6 ${styles.contentBox}`}>
+            <div className={`col-xs-12 col-md-6 ${styles.contentBox}`}>
               <h2>{project.title}</h2>
               <div className={styles.button}>
                 <Button href={project.link} variant='outline'>
                   See project
                 </Button>
-                <Button href={project.link} variant='outline'>
+                <Button href={project.github} variant='outline'>
                   See GitHub
                 </Button>
               </div>

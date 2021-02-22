@@ -1,6 +1,8 @@
 import Anizza_2 from '../images/Anizza_2.png';
 import Anizza_3 from '../images/Anizza_3.png';
 import Bazar_1 from '../images/Bazar_1.png';
+import MammaMia_1 from '../images/MammaMia_1.png';
+import MammaMia_2 from '../images/MammaMia_2.png';
 
 const initialState = {
   posts: [
@@ -52,10 +54,12 @@ const initialState = {
         'Pizzeria Mamma mia is a restaurant website written in HTML, SASS and JavaScript.',
       link: 'https://blooming-fjord-08456.herokuapp.com',
       github: 'https://github.com/akijania/project-pizzeria',
+      technologies: ['HTML', 'SCSS', 'Handlebars', 'JavaSctipt', 'AJAX and API'],
       image:
         'https://images.pexels.com/photos/2762942/pexels-photo-2762942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       description2:
         'At first sight, we see a modest page which graphics are subdued to shift attention to photos or product illustrations. We chose a minimalist approach so that the potential customer does not get lost among many links and he has quick access to what he is interested in. The ordering page is clear and uncomplicated at first sight - but at the same time it contains rare functionalities, such as the ability to change the default ingredients or illustrations that reflect the product options selected by the user. As a result, it will be remembered and allow you to adjust the order to individual preferences.By going to the table reservation page, the user will encounter a pleasant surprise. Rather, he would expect a telephone number where a reservation can be made - or at most a contact form. Our application, however, allows not only to check the availability of tables, but also to choose a specific one. Thanks to this, the potential customer will be able to choose a table away from the entrance, by the window or in the smoking room - depending on how we expand the restaurant map.',
+      images: [MammaMia_1, MammaMia_2],
     },
     {
       id: 'administration-panel',

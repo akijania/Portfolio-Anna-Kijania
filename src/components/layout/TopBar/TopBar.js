@@ -9,8 +9,8 @@ import styles from './TopBar.module.scss';
 const TopBar = () => (
   <div className={styles.root}>
     <div className='container'>
-      <div className='row'>
-        <div className={`col-sm-8 col-md-6 text-left ${styles.topOptions}`}>
+      <div className='row justify-content-between'>
+        <div className={`col-xs-8 text-left ${styles.topOptions}`}>
           <ul>
             <li>
               <a className={styles.name} href='/#'>
@@ -25,7 +25,7 @@ const TopBar = () => (
             </li>
           </ul>
         </div>
-        <div className={`col text-right ${styles.topMenu}`}>
+        <div className={`col-xs-2 text-right ${styles.topMenu}`}>
           <a href='mailto:kijania.anna@gmail.com'>
             <FontAwesomeIcon className={styles.icon} icon={faEnvelope} /> contact me
           </a>
