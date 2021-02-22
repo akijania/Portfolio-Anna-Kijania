@@ -1,3 +1,5 @@
+const path = require('path');
+
 const cors = require('cors');
 const express = require('express');
 const router = express.Router();
@@ -8,8 +10,13 @@ const creds = require('./config');
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'build')));
 app.use('/', router);
-app.listen(5000, () => console.log('Server Running'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/build/index.html'));
+});
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
@@ -46,4 +53,7 @@ router.post('/contact', (req, res) => {
       res.json({ status: 'Message Sent' });
     }
   });
+});
+app.listen(process.env.PORT || 5000, () => {
+  console.log('Server Running');
 });
