@@ -1,8 +1,4 @@
-import {
-  faFacebookF,
-  faLinkedinIn,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
@@ -21,7 +17,6 @@ class Hello extends React.Component {
             <div className={'col-sm-12 col-lg-7 ' + styles.box}>
               <h1>Hello!</h1>
               <p>
-                {' '}
                 I am Ania. Hardworking Architect and Web Developer. Ready to utilize my
                 skills and passion to further the mission of company. Technologically
                 adept, offering experience with graphic programs and good knowledge of
@@ -34,11 +29,6 @@ class Hello extends React.Component {
                   <li>
                     <a href='https://github.com/akijania'>
                       <FontAwesomeIcon icon={faGithub}>Github</FontAwesomeIcon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='https://www.facebook.com/anna.wa.142'>
-                      <FontAwesomeIcon icon={faFacebookF}>Facebook</FontAwesomeIcon>
                     </a>
                   </li>
                   <li>

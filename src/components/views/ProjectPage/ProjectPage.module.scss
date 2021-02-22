@@ -5,8 +5,38 @@
   border: 1px solid $product-root-color;
   margin-bottom: 2rem;
   color: $text-color;
-}
+  text-align: justify;
 
-.box {
-  height: 250px;
+  .box {
+    height: 250px;
+  }
+
+  .image {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 10px 0;
+    }
+  }
+
+  .contentBox {
+    padding: 50px;
+  }
+
+  .button {
+    padding: 20px 0;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+    margin-bottom: 10px;
+  }
+
+  .technologies {
+    padding: 10px 0;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+    margin-bottom: 10px;
+  }
 }

@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 import styles from './LastPost.module.scss';
 
-const LastPost = ({ id, title, description, image }) => (
+const LastPost = ({ id, title, description, image, link }) => (
   <div className={styles.root}>
     <div className={styles.photo}>
       <img src={image} alt={id} />
@@ -15,7 +15,7 @@ const LastPost = ({ id, title, description, image }) => (
         <a href='/#'>{title}</a>
       </h4>
       <div className={styles.button}>
-        <Button href={`/projects/${id}`} variant='outline'>
+        <Button href={link} variant='outline'>
           See project
         </Button>
       </div>
@@ -32,6 +32,7 @@ const LastPost = ({ id, title, description, image }) => (
 LastPost.propTypes = {
   id: PropTypes.string.isRequired,
   date: PropTypes.string,
+  link: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,

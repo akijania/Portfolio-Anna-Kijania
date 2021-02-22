@@ -1,8 +1,4 @@
-import {
-  faFacebookF,
-  faLinkedinIn,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
@@ -24,11 +20,6 @@ const Footer = ({ children }) => (
               <li>
                 <a href='https://github.com/akijania'>
                   <FontAwesomeIcon icon={faGithub}>Github</FontAwesomeIcon>
-                </a>
-              </li>
-              <li>
-                <a href='https://www.facebook.com/anna.wa.142'>
-                  <FontAwesomeIcon icon={faFacebookF}>Facebook</FontAwesomeIcon>
                 </a>
               </li>
               <li>
