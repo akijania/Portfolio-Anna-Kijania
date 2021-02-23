@@ -37,7 +37,7 @@ class Hello extends React.Component {
                     </a>
                   </li>
                   <li>
-                    <a href='/#'>
+                    <a href='https://www.linkedin.com/in/anna-kijania-443463207/'>
                       <FontAwesomeIcon icon={faLinkedinIn}>LinkedIn</FontAwesomeIcon>
                     </a>
                   </li>
